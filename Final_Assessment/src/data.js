@@ -61,7 +61,8 @@ function createCard(review){
 }
 console.log({reviewData}, "Data");
 window.onload = function(){
-    var cards= document.getElementById("review-cards");
+    //var container = document.querySelector("card-container");
+    var cards = document.getElementById("review-cards");
     reviewData.forEach((data) => {
         let result = createCard(data);
         console.log(result);
