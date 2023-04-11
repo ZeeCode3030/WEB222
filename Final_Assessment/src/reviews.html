@@ -12,10 +12,34 @@
 
         </nav>
         <main>
-        <div id="card-container">
+        <section id="card-container">
             <div id="review-cards"></div>
-        </div>
-            <script src="data.js"></script>
+        </section>
+            <form action="/post" method="post">
+                <label for="name">Name</label>
+                <input id="name" type="text" 
+                required 
+                tabindex="1"/>
+
+                <label for="review">Review</label>
+                <textarea id="review" type="text" tabindex="2" 
+                placeholder="Type your review here"
+                spellcheck="true"></textarea>
+
+                <label for="date">Date</label>
+                <input id="date" type="date"
+                tabindex="3"/>
+
+                <label for="rating">Rating</label>
+                <select id="rating" type="number" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </form>
+        <script src="data.js"></script>
 
         </main>
 
