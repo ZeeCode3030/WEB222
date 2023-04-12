@@ -53,11 +53,13 @@ h1 {
   text-shadow: 4px 4px 4px #171616;
   padding: 20px;
   margin: 0;
+  text-align: center;
 }
 body {
   max-width: 800px;
   justify-content: center;
   margin: auto;
+  margin-bottom: 20px;
   font-family: "EB Garamond", serif;
   background-color: #fffad0;
   padding: 10px;
@@ -67,7 +69,7 @@ h3,
 h4,
 h5 {
   font-family: "Alice", serif;
-  text-shadow: -1px 2px 2px #60424c;
+  text-shadow: -1px 2px 1.5px #2d171e;
   font-weight: 700;
   color: #ff5959;
 }
@@ -102,12 +104,14 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0px;
+  margin-bottom: 10px;
 }
 form {
   display: grid;
   grid-template-rows: auto;
   background-color: #fce38a;
   padding: 10px;
+  margin:auto;
 }
 label {
   font-weight: 600;
@@ -177,6 +181,6 @@ textarea {
 }
 blockquote {
   padding: 4px;
-font-family: 'Charm', cursive;
+  font-family: 'Charm', cursive;
   font-size: 1.1em;  
 }
