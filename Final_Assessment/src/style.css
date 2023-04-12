@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=EB+Garamond&family=Great+Vibes&display=swap");
+/* font-family: 'Alice', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Great Vibes', cursive; */
 /* body {
 
   font-size: 1.8rem;
@@ -20,6 +24,56 @@
     font-size: 1.35rem;
   }
  } */
+/* 
+  background-color: #fce38a;
+  background-color: #f38181;
+  background-color: #eaffd0;
+  background-color: #95e1d3;
+
+*/
+html{
+  margin-color:#eaffd0;
+
+}
+head, h1{
+  background-color: #f38181;
+  color:white;
+  text-shadow:4px 4px 4px #4a4a4a ;
+  padding: 20px;
+  margin:0;
+}
+body {
+  max-width: 750px;
+  justify-content: center;
+  margin: auto;
+  font-family: "EB Garamond", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Alice", serif;
+  font-weight: 700;
+}
+nav {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #95e1d3;
+
+  /* height: 90px;
+  max
+  width: 90px;
+  border: 1px solid rgb(41, 45, 46);
+  border-radius: 5px;
+  background-color: lightyellow;
+  float: right;
+  position: fixed;
+  margin-top: 5px; */
+}
 form {
   display: grid;
   grid-template-rows: auto;
@@ -40,10 +94,14 @@ button {
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
-  color:white;
-  max-width: fit-content;
+  color: white;
+  max-width: auto;
   cursor: pointer;
   background-color: #1d7484;
+  margin: 3px;
+}
+#submit {
+  max-width: fit-content;
 }
 select {
   max-width: fit-content;
@@ -67,7 +125,7 @@ textarea {
   margin: 8px;
   background-color: rgb(183, 214, 242);
   border-radius: 20px;
-  max-width: 25%;
+  max-width: 50%;
   color: #144f5a;
   font-weight: 600;
   box-shadow: 5px 5px 5px #4a4a4a;
@@ -80,4 +138,9 @@ textarea {
 .card time,
 .card span {
   margin-left: 0.5em;
+}
+blockquote {
+  padding: 4px;
+
+  /* font-family: 'Great Vibes', cursive;  */
 }

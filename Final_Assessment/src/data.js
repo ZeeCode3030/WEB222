@@ -1,36 +1,37 @@
 
 // Attach reviewData to the global window Object
 // so other scripts can access it at runtime.
+
 window.reviewData = [
     {
         name: "Phena",
         date: "04/09/2013",
         rating: 4.5,
-        review: ""
+        review: "This game was pretty great. I am the competitive type so imagine how many new words I learned because I wanted to win. Would definitely recommend "
     },
     {
         name: "Jochebed",
         date: "23/12/2015",
         rating: 3.8,
-        review: ""
+        review: "Good game, nothing too special but I great for family game night"
     },
     {
         name: "David",
         date: "20/02/2022",
         rating: 4,
-        review: ""
+        review: "Super fun game. Played it for the first time today and I regret never knowing about it all these years. It is not my typical type of game but I absolutely cannot wait to introduce it to my family "
     },
     {
         name: "Nicholas",
         date: "01/05/2010",
         rating: 5,
-        review: ""
+        review: "Phenomenal game. A Great learning tool for the kids"
     },
     {
         name: "Elvis",
         date: "22/04/2020",
-        rating: 4.5,
-        review: ""
+        rating: 3,
+        review: "Okay game, chess is better."
     }
 	/* Your Review Data Goes Here… */
 ];
