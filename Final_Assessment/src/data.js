@@ -3,35 +3,30 @@
 // so other scripts can access it at runtime.
 window.reviewData = [
     {
-        id: "phena",
         name: "Phena",
         date: "04/09/2013",
         rating: 4.5,
         review: ""
     },
     {
-        id: "Jochy",
         name: "Jochebed",
         date: "23/12/2015",
         rating: 3.8,
         review: ""
     },
     {
-        id: "david",
         name: "David",
         date: "20/02/2022",
         rating: 4,
         review: ""
     },
     {
-        id: "nick",
         name: "Nicholas",
         date: "01/05/2010",
         rating: 5,
         review: ""
     },
     {
-        id: "elvis",
         name: "Elvis",
         date: "22/04/2020",
         rating: 4.5,
@@ -61,13 +56,36 @@ function createCard(review){
 }
 console.log({reviewData}, "Data");
 window.onload = function(){
-    //var container = document.querySelector("card-container");
+    const form = document.querySelector("form");
     var cards = document.getElementById("review-cards");
     reviewData.forEach((data) => {
         let result = createCard(data);
         console.log(result);
         cards.appendChild(result);
     });
+   // const createButton = document.getElementById("create");
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+        cards.innerHTML ="";
 
-    return cards;
+        let name = document.getElementById("name").value;
+        let date = document.getElementById("date").value;
+        let rating = document.getElementById("rating").value;
+        let review = document.getElementById("review").value;
+
+        const newReview = {name, date, rating, review};
+        console.log(newReview);
+        reviewData.push(newReview);
+        form.reset();
+        reviewData.forEach((data) => {
+            let result = createCard(data);
+            console.log(result);
+            cards.appendChild(result);
+        });
+       
+    });
+    console.log(reviewData);
+     //var container = document.querySelector("card-container");
+     
+     return cards;
 }
