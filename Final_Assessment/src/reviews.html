@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Reviews</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reviews</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    
-    </head>
+  </head>
 
-    <body>
-        <h1>Reviews</h1>
-       <!-- <aside> -->
-        <nav>
-            <button onclick="window.location.href = 'index.html';"><a href="index.html"></a>Sign-up</button>
-            <button onclick="window.location.href = 'info.html';"><a href="info.html"></a>About the game</button>
-            <button onclick="window.location.href = 'about.html';"><a href="about.html"></a>About the Author</button>
+  <body>
+    <h1>Reviews</h1>
+    <aside>
+    <nav id="review-tab">
+      <button onclick="window.location.href = 'index.html';">
+        <a href="index.html"></a>Sign-up
+      </button>
+      <button onclick="window.location.href = 'info.html';">
+        <a href="info.html"></a>About the game
+      </button>
+      <button onclick="window.location.href = 'about.html';">
+        <a href="about.html"></a>About the Author
+      </button>
+    </nav>
+    </aside>
 
-        </nav>
-     <!-- </aside> -->
-       
-        <main>
-        <section id="card-container">
-            <div id="review-cards"></div>
-        </section>
-            <form>
-                <label for="name">Name</label>
-                <input id="name" type="text" 
-                required 
-                tabindex="1"/>
+    <main>
+      <section id="card-container">
+        <div id="review-cards"></div>
+      </section>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" required tabindex="1" />
 
-                <label for="review">Review</label>
-                <textarea id="review" type="text" tabindex="2" 
-                placeholder="Type your review here"
-                spellcheck="true"></textarea>
+        <label for="review">Review</label>
+        <textarea
+          id="review"
+          type="text"
+          tabindex="2"
+          placeholder="Type your review here"
+          spellcheck="true"
+        ></textarea>
 
-                <label for="date">Date</label>
-                <input id="date" type="date"
-                tabindex="3"/>
+        <label for="date">Date</label>
+        <input id="date" type="date" tabindex="3" />
 
-                <label for="rating">Rating</label>
-                <select id="rating" type="number" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            <button id="create" type="submit">Create</button>
-            </form>
-        <script src="data.js"></script>
-
-        </main>
-
-    </body>
+        <label for="rating">Rating</label>
+        <select id="rating" type="number" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button id="create" type="submit">Create</button>
+      </form>
+      <script src="data.js"></script>
+    </main>
+  </body>
 </html>

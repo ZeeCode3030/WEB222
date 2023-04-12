@@ -25,21 +25,33 @@ font-family: 'Great Vibes', cursive; */
   }
  } */
 /* 
+pastelly
   background-color: #fce38a;
   background-color: #f38181;
   background-color: #eaffd0;
   background-color: #95e1d3;
-
+SECOND CHOICE
+   background-color: #ff8f56;
+  background-color: #ff5959;
+  background-color: #60424c;
+  background-color: #984a59;
 */
-html{
-  background-color: #95e1d3;
+html {
+  background-color: #ff8f56;
+  background-color: #ff5959;
+  background-color: #60424c;
+  background-color: #984a59;
+  background-color: #e1bc95;
 }
-head, h1{
-  background-color: #f38181;
-  color:white;
-  text-shadow:4px 4px 4px #4a4a4a ;
+head h1,
+h1 {
+  background-color: #60424c;
+  /* background-color: #662a2a; */
+  font-family: "Alice", serif;
+  color: white;
+  text-shadow: 4px 4px 4px #171616;
   padding: 20px;
-  margin:0;
+  margin: 0;
 }
 body {
   max-width: 800px;
@@ -48,33 +60,51 @@ body {
   font-family: "EB Garamond", serif;
   background-color: #eaffd0;
   padding: 10px;
-
 }
-h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: "Alice", serif;
+  text-shadow: -1px 2px 2px #60424c;
   font-weight: 700;
+  color: #ff5959;
+}
+/* aside{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+} */
+figure,
+picture {
+  text-align: center;
+  align-items: center;
+  background-color: #ff8f56;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+hr{
+  margin:0;
+  padding:0;
+  background-color: #60424c;
+  height: 2px;
+}
+figure{
+  margin:0
+}
+img {
+  display: flex;
+  max-width: -webkit-fill-available;
+  margin: auto;
+  border-radius: 5px;
 }
 nav {
   display: flex;
   float: right;
   flex-direction: column;
   margin: 10px;
+  border: 1px solid;
   box-sizing: border-box;
   background-color: #95e1d3;
-
-  /* height: 90px;
-  max
-  width: 90px;
-  border: 1px solid rgb(41, 45, 46);
-  border-radius: 5px;
-  background-color: lightyellow;
-  float: right;
-  position: fixed;
-  margin-top: 5px; */
 }
 form {
   display: grid;
@@ -100,7 +130,7 @@ button {
   max-width: auto;
   cursor: pointer;
   /* background-color: #1d7484; */
-  background-color: #fce38a;
+  background-color: #984a59;
 
   margin: 3px;
 }
@@ -117,19 +147,21 @@ textarea {
 #name {
   max-width: 250px;
 }
+
+#card-container{
+  display:inline-flex;
+}
 #review-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
 }
 .card {
   padding: 10px;
   margin: 8px;
-  background-color: rgb(183, 214, 242);
+  background-color: #ff8f56;
   border-radius: 20px;
-  max-width: 50%;
   color: #144f5a;
   font-weight: 600;
   box-shadow: 5px 5px 5px #4a4a4a;
@@ -138,6 +170,7 @@ textarea {
   margin: 0.3em;
   max-width: 180px;
   font-size: 1.5em;
+  color:#eaffd0;
 }
 .card time,
 .card span {
