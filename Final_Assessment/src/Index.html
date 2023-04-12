@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <title>Sign-up</title>
     <h1>Sign-up for our Newsletter</h1>
-     <link rel="stylesheet" href="style.css" type="text/css" />
-     
+    <link rel="stylesheet" href="style.css" type="text/css" /> 
+    
+    <aside>
+      <nav>
+        <button onclick="window.location.href = 'info.html';">
+          <a href="info.html"></a>About the game
+        </button>
+        <button onclick="window.location.href = 'reviews.html';">
+          <a href="reviews.html"></a>Reviews
+        </button>
+        <button onclick="window.location.href = 'about.html';">
+          <a href="about.html"></a>About the Author
+        </button>
+      </nav>
+    </aside>
 
   </head>
 
   <body>
-    <aside>
-      <nav>
-        <button onclick="window.location.href = 'info.html';"><a href="info.html"></a>About the game</button>
-        <button onclick="window.location.href = 'reviews.html';"><a href="reviews.html"></a>Reviews</button>
-        <button onclick="window.location.href = 'about.html';"><a href="about.html"></a>About the Author</button>
-    </nav>
-      </aside>
-  
+   
     <form action="/POST" method="post">
       <label for="email">Email</label>
       <input
@@ -28,11 +34,14 @@
         required
       />
       <label for="name" hidden="true">My Name</label>
-      <input id="name" type="text" hidden tabindex="2"
-       value="Hephzibah Nick-Oshomah"
-       />
-       <button type="submit" tabindex="3" id="submit">Join</button>
-
+      <input
+        id="name"
+        type="text"
+        hidden
+        tabindex="2"
+        value="Hephzibah Nick-Oshomah"
+      />
+      <button type="submit" tabindex="3" id="submit">Join</button>
     </form>
   </body>
 </html>

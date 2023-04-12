@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=EB+Garamond&family=Great+Vibes&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Alice&family=Charm&family=EB+Garamond&family=Great+Vibes&display=swap');
 /* font-family: 'Alice', serif;
+font-family: 'Charm', cursive;
 font-family: 'EB Garamond', serif;
-font-family: 'Great Vibes', cursive; */
+font-family: 'Great Vibes', cursive;*/
 /* body {
 
   font-size: 1.8rem;
@@ -43,7 +44,7 @@ html {
   background-color: #984a59;
   background-color: #e1bc95;
 }
-head h1,
+head,
 h1 {
   background-color: #60424c;
   /* background-color: #662a2a; */
@@ -58,7 +59,7 @@ body {
   justify-content: center;
   margin: auto;
   font-family: "EB Garamond", serif;
-  background-color: #eaffd0;
+  background-color: #fffad0;
   padding: 10px;
 }
 h2,
@@ -98,20 +99,19 @@ img {
   border-radius: 5px;
 }
 nav {
-  display: flex;
-  float: right;
-  flex-direction: column;
-  margin: 10px;
-  border: 1px solid;
-  box-sizing: border-box;
-  background-color: #95e1d3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px;
 }
 form {
   display: grid;
   grid-template-rows: auto;
+  background-color: #fce38a;
+  padding: 10px;
 }
 label {
   font-weight: 600;
+  color:#60424c;
 }
 input,
 select {
@@ -131,7 +131,6 @@ button {
   cursor: pointer;
   /* background-color: #1d7484; */
   background-color: #984a59;
-
   margin: 3px;
 }
 #submit {
@@ -162,7 +161,7 @@ textarea {
   margin: 8px;
   background-color: #ff8f56;
   border-radius: 20px;
-  color: #144f5a;
+  color: #60424c;
   font-weight: 600;
   box-shadow: 5px 5px 5px #4a4a4a;
 }
@@ -178,6 +177,6 @@ textarea {
 }
 blockquote {
   padding: 4px;
-
-  /* font-family: 'Great Vibes', cursive;  */
+font-family: 'Charm', cursive;
+  font-size: 1.1em;  
 }
