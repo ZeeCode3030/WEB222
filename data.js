@@ -30,7 +30,7 @@ window.reviewData = [
   },
   {
     name: "Elvis",
-    date: "2020-04-2022",
+    date: "2020-04-22",
     rating: 3,
     review: "Okay game, chess is better.",
   },
