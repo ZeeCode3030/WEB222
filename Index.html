@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign-up</title>
+    <h1>Sign-up for our Newsletter</h1>
+    <link rel="stylesheet" href="style.css" type="text/css" /> 
+    
+      <nav>
+        <button onclick="window.location.href = 'info.html';">
+          <a href="info.html"></a>About the game
+        </button>
+        <button onclick="window.location.href = 'reviews.html';">
+          <a href="reviews.html"></a>Reviews
+        </button>
+        <button onclick="window.location.href = 'about.html';">
+          <a href="about.html"></a>About the Author
+        </button>
+      </nav>
+  </head>
+
+  <body>
+   
+    <form action="/POST" method="post">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        tabindex="1"
+        placeholder="Username@email"
+        required
+      />
+      <label for="name" hidden="true">My Name</label>
+      <input
+        id="name"
+        type="text"
+        hidden
+        tabindex="2"
+        value="Hephzibah Nick-Oshomah"
+      />
+      <button type="submit" tabindex="3" id="submit">Join</button>
+    </form>
+  </body>
+</html>
