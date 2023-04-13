@@ -21,7 +21,7 @@
   <hr />
 
   <body>
-    <form action="/POST" method="post">
+    <form action="https://httpbin.org/post" method="POST">
       <label for="email">Email</label>
       <input
         id="email"
@@ -33,10 +33,9 @@
       <label for="name" hidden="true">My Name</label>
       <input
         id="name"
-        type="text"
-        hidden
+        type="hidden"
         tabindex="2"
-        value="Hephzibah Nick-Oshomah"
+        name="Hephzibah Nick-Oshomah"
       />
       <button type="submit" tabindex="3" id="submit">Join</button>
     </form>
