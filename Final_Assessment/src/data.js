@@ -49,22 +49,21 @@ function createCard(review) {
   let date = document.createElement("time");
   date.innerText = review.date;
   card.appendChild(date);
-  
+
   let rating = document.createElement("span");
-  rating.innerText= 'Rating: ';
-      for (let i = 0; i < review.rating; i++) {
-        rating.innerHTML += '&#9733; '; // Unicode star symbol
-      }
-      for (let i = review.rating; i < 5; i++) {
-        rating.innerHTML += '&#9734; '; // Unicode star outline symbol
-      }
-      card.appendChild(rating);
+  rating.innerText = "Rating: ";
+  for (let i = 0; i < review.rating; i++) {
+    rating.innerHTML += "&#9733; "; // Unicode star symbol
+  }
+  for (let i = review.rating; i < 5; i++) {
+    rating.innerHTML += "&#9734; "; // Unicode star outline symbol
+  }
+  card.appendChild(rating);
 
   let message = document.createElement("blockquote");
   message.innerText = review.review;
   card.appendChild(message);
 
-  
   return card;
 }
 console.log({ reviewData }, "Data");
